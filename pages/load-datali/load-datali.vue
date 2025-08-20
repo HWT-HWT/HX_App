@@ -5,8 +5,8 @@
 		</view>
 		<view class="money">
 			<p>剩余未还本金(元)</p>
-			<span>400,000.00</span>
-			<text>贷款金额:400,000.00元</text>
+			<span>3,650,000.00</span>
+			<text class="text">贷款金额:3,650,000.00元</text>
 		</view>
 		
 		<view class="play-datali">
@@ -66,6 +66,8 @@
 		background-color: #f2f2f2;
 		.datali-title{
 			background-color: #fff;
+			margin-top: 50rpx;
+			padding: 0 20rpx;
 		}
 		.money{
 			display: flex;
@@ -83,7 +85,7 @@
 				font-size: 60rpx;
 				margin-top: 15rpx;
 			}
-			text{
+			.text{
 				width: 100%;
 				color: #888;
 				font-size: 28rpx;

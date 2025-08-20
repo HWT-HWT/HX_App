@@ -22,8 +22,8 @@
 					{
 						name:'基本信息',li:[
 							{liName:'产品名称',subName:'个人经营性贷款'},
-							{liName:'获批额度',subName:'￥14,000,000.00'},
-							{liName:'提款金额',subName:'￥14,000,000.00'},
+							{liName:'获批额度',subName:'￥4,000,000.00'},
+							{liName:'提款金额',subName:'￥4,000,000.00'},
 							{liName:'额度获批日期',subName:'2022-06-24'},
 							{liName:'提款日期',subName:'2022-07-27'},
 							{liName:'贷款支付方式',subName:'受托支付'},
@@ -36,7 +36,7 @@
 						name:'期限详情',li:[
 							{liName:'贷款期限',subName:'59个月'},
 							{liName:'贷款到期日',subName:'2027-06-27'},
-							{liName:'贷款剩余期数',subName:'0024期'},
+							{liName:'贷款剩余期数',subName:'0022期'},
 						],
 					},
 					{
@@ -50,7 +50,7 @@
 					{
 						name:'还款设定',li:[
 							{liName:'还款方式',subName:'到期一次性本利清'},
-							{liName:'还款卡',subName:'6230****9323'},
+							{liName:'还款卡',subName:'6230 **** **** 9323'},
 						],
 					}
 				]

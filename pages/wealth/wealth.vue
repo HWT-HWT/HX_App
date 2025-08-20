@@ -14,11 +14,13 @@
 		<view class="wealth-assets">
 			<view class="assets">
 				<view class="p">我的总资产 <image src="../../static/wealth-icon-1.png" mode=""></image> </view>
-				<view class="span">登陆后查看资产 <image src="../../static/dis_renwu_next.png" mode=""></image> </view>
+				<view class="span" v-if="!account" >登陆后查看资产 <image src="../../static/dis_renwu_next.png" mode=""></image> </view>
+				<view class="span" v-else>0.00 <image src="../../static/dis_renwu_next.png" mode=""></image> </view>
 			</view>
 			<view class="assets">
 				<view class="p">昨日收益 <image src="../../static/wealth-icon-1.png" mode=""></image> </view>
-				<view class="span">****** <image src="../../static/dis_renwu_next.png" mode=""></image> </view>
+				<view class="span" v-if="!account">****** <image src="../../static/dis_renwu_next.png" mode=""></image> </view>
+				<view class="span" v-else>0.00 <image src="../../static/dis_renwu_next.png" mode=""></image> </view>
 			</view>
 		</view>
 		<view class="wealth-listview">
@@ -148,6 +150,7 @@
 		data() {
 			return {
 				TopScroll:0,
+				account:'',
 				ListView:[
 					{name:'存款',images:'../../static/index-icon-1.png'},
 					{name:'每日签到',images:'../../static/index-icon-2.png'},
@@ -210,7 +213,10 @@
 		},
 		onPageScroll(Scroll) {
 			this.TopScroll = Scroll.scrollTop
-		}
+		},
+		onLoad(account) {
+			this.account = uni.getStorageSync('account').token;
+		},
 	}
 </script>
 

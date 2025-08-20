@@ -126,7 +126,7 @@
 		background: url('../static/load-two-bg-1.png')no-repeat;
 		background-size:100%;
 		.load-title{
-			padding: 50rpx 30rpx;
+			padding: 80rpx 30rpx;
 			display: flex;
 			align-items: center;
 			justify-content: space-between;

@@ -1,5 +1,5 @@
 <template>
-	<view class="load-title">
+	<view class="load-title" style="padding-top: 80rpx;">
 		<image class="left-icon" src="@/static/left-cion-1.png" mode="" @click="Back"></image>
 		<text :style="{fontWeight:titleFW}">{{title}}</text>
 		<view class="icon">
@@ -55,8 +55,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 20rpx;
-		padding-top: 50rpx;
+		padding-top: 150rpx;
 		.left-icon{
 			width: 35rpx;
 			height: 45rpx;

@@ -24,7 +24,7 @@
 	}
 	.All{
 		width: 100vw;
-		min-height:100vh ;
+		min-height:100vh;
 		background-color: #f6f7fb;
 	}
 </style>

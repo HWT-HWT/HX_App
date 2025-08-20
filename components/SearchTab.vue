@@ -83,7 +83,7 @@
 		}
 		.Search{
 			flex: 1;
-			padding: 15rpx;
+			
 			border-radius: 10rpx;
 			background-color: #fff;
 			margin:20rpx;
@@ -93,6 +93,7 @@
 			image{
 				width: 35rpx;
 				height:35rpx;
+				padding: 15rpx;
 			}
 			input{
 				flex: 1;
@@ -105,6 +106,7 @@
 		}
 	}
 	.position{
+		width: 95%;
 		position: fixed;
 		background-color: #fff;
 		z-index: 999;

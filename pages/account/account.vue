@@ -34,7 +34,7 @@
 			<view class="account-Money">
 				<span>可用余额</span>
 				<view class="money" @click="GoAccountDatali">
-					<text>￥0.00</text>
+					<text>￥33,759.98</text>
 					<image src="@/static/upsdk_payment_right.webp" mode=""></image>
 				</view>
 			</view>

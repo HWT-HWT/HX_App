@@ -32,7 +32,7 @@
 			<view class="money-box">
 				<span>存款</span>
 				<view class="icon">
-					<text>0.00</text>
+					<text>33,759.98</text>
 					<image src="../../static/upsdk_payment_right.webp" mode=""></image>
 				</view>
 			</view>

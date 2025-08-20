@@ -45,7 +45,7 @@
 					<view class="accountName">
 						<view class="listView">
 							<p>华夏卡(尾号9323)</p>
-							<span>可用余额￥0.00</span>
+							<span>可用余额￥33,759.98</span>
 						</view>
 						<image src="../../static/upsdk_payment_right.webp" mode=""></image>
 					</view>

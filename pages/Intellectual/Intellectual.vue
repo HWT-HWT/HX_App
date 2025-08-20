@@ -6,7 +6,7 @@
 		<view class="date">更新时间: 08-05 10:41:45</view>
 		<view class="Intellectual-moenyBox">
 			<span>总资产(元)</span>
-			<p>0.00</p>
+			<p>33,759.98</p>
 			<text>查看收益</text>
 		</view>
 		<view class="Intellectual-list">

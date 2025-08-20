@@ -28,7 +28,7 @@
 				<span>华夏卡</span>
 			</view>
 			<text v-if="TrueEye">******</text>
-			<text v-else>0.00</text>
+			<text v-else>33,759.98</text>
 			<p>美元个人结构性存款,2000美元起存,点击...</p>
 		</view>
 		<view class="index-listview">

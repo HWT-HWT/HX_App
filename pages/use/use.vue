@@ -43,7 +43,7 @@
 				<TItleBoxVue title="资产概况" SubTitle="切换图表" textColor="#96b7f0" :icon="true" images="../../static/icon-1.png"></TItleBoxVue>
 				<view class="money">
 					<p>总资产</p>
-					<span>￥0.00</span>
+					<span>￥33,759.98</span>
 					<text>最日收益0.00元</text>
 				</view>
 				<view class="licai">
@@ -94,7 +94,7 @@
 			<TItleBoxVue title="我的贷款" :icon="true"></TItleBoxVue>
 			<view class="listView tow" style="background:#fff;">
 				<span>剩余未还本金 <text style="color: #ccaa7b; border: 1px solid; margin-left: 20rpx; font-size: 20rpx;">个人经营性贷款</text> </span>
-				<p>￥400,000.00</p>
+				<p>￥365,000.00</p>
 			</view>
 		</view>
 		<view class="use-guarantee AllPage">
@@ -170,7 +170,7 @@
 		<view class="use-setting">
 			<TItleBoxVue titleSize="35rpx" title="更多服务" :icon="false"></TItleBoxVue>
 			<view style="margin-top: 40rpx;"></view>
-			<ListViewVue :list="stting" width="65" height="65" font-size="25rpx"></ListViewVue>
+			<ListViewVue :list="stting" width="65" height="65" font-size="25rpx" @index='index'></ListViewVue>
 		</view>
 	</view>
 </template>
@@ -247,6 +247,13 @@
 				index == 1 ? uni.navigateTo({
 					url:'/pages/IncomeExpenses/IncomeExpenses'
 				})  : '' 
+			},
+			index(index){
+				console.log(index);
+				index === 3 ? uni.clearStorage('account') :''
+				uni.reLaunch({
+					url: '/pages/index/index'
+				})
 			}
 		},
 		onLoad() {
