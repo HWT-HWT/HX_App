@@ -44,7 +44,7 @@
 				<view class="money">
 					<p>总资产</p>
 					<span>￥33,759.98</span>
-					<text>最日收益0.00元</text>
+					<span class="text">最日收益0.00元</span>
 				</view>
 				<view class="licai">
 					<view class="listView" v-for="(item,index) in licai" :key="index">
@@ -112,7 +112,7 @@
 			<TItleBoxVue title="我的服务" :icon="false"></TItleBoxVue>
 			<view class="serve-box">
 				<view class="topic">
-					<TItleBoxVue title="我的主题"></TItleBoxVue>
+					<span style="padding: 0 20rpx; font-size: 35rpx; font-weight: bold;">我的主题</span>
 					<image src="../../static/use-topic-1.png" mode=""></image>
 				</view>
 				
@@ -356,8 +356,8 @@
 						font-size: 45rpx;
 						font-weight: bold;
 					}
-					text{
-						font-size: 25rpx;
+					.text{
+						font-size: 28rpx;
 						color: #888;
 					}
 				}

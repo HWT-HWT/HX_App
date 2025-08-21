@@ -8,14 +8,11 @@
 			</view>
 		</view>
 		<view class="Transfer-MaxList-Setting">
-			<view  v-for="(item,index) in MaxListSet" @click="GetMaxListIndex(index)" :key="index" :style="{borderRight:index == 0 ? '1px solid #ccc' : ''}">
+			<view  v-for="(item,index) in MaxListSet" @click="GetMaxListIndex(index)" :key="index+10" :style="{borderRight:index == 0 ? '1px solid #ccc' : ''}">
 				{{item}}
 			</view>
 		</view>
-		<view class="Transfer-listview">
-			<ListViewVue :list="ListView" width="60" height="60" font-size="25rpx"></ListViewVue>
-			<image src="../../static/Transfer-bottom-1.png" mode=""></image>
-		</view>
+		<ListViewVue :list="ListView" width="60" height="60" font-size="25rpx" @index='GetIndex'></ListViewVue>
 		<view class="Transfer-people">
 			<view class="people">
 				<span>最近收款人</span>
@@ -29,7 +26,7 @@
 						<image class="header" src="../../static/use-head-1.png" mode=""></image>
 						<view>
 							<span>吴志斐</span>
-							<text></text>
+							<span class="text"></span>
 						</view>
 					</view>
 					<image class="bottom" src="../../static/Transfer-bottom-1.png" mode=""></image>
@@ -41,7 +38,7 @@
 						<image class="header" :src="item.logo" mode=""></image>
 						<view>
 							<span>{{item.name}}</span>
-							<text>{{item.text}}</text>
+							<span class="text">{{item.text}}</span>
 						</view>
 					</view>
 					<image class="bottom" src="../../static/Transfer-bottom-1.png" mode=""></image>
@@ -133,6 +130,7 @@
 			width: 95%;
 			margin: 0 auto;
 			padding: 20rpx 0;
+			margin-bottom: 20rpx;
 			background-color: #e6ebf2;
 			display: flex;
 			justify-content: space-evenly;
@@ -144,6 +142,7 @@
 			}
 		}
 		.Transfer-listview{
+			height: 100%;
 			margin: 0 auto;
 			margin-top: 30rpx;
 			display: flex;
@@ -206,7 +205,7 @@
 								font-weight: bold;
 								font-size: 32rpx;
 							}
-							text{
+							.text{
 								width: 100%;
 								font-size: 25rpx;
 								margin-top: 10rpx;

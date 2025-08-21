@@ -6,7 +6,7 @@
 		<view class="money">
 			<p>剩余未还本金(元)</p>
 			<span>3,650,000.00</span>
-			<text class="text">贷款金额:3,650,000.00元</text>
+			<span class="text">贷款金额:3,650,000.00元</span>
 		</view>
 		
 		<view class="play-datali">

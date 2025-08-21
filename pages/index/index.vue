@@ -291,6 +291,9 @@
 				this.TrueEye = !this.TrueEye
 			},
 			GetIndex(index){
+				if(!this.account){
+					return
+				}
 				index === 0 ? uni.navigateTo({
 					url:'/pages/load/load'
 				}) : ''

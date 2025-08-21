@@ -2,8 +2,7 @@
 	<view class="List-box">
 		<view class="home-list-content-icons">
 			<view class="content-icons-text" v-for="(item,index) in list" :key="index" :style="{'width': BoxWodth}" @click="ListIndex(index)">
-				<image :src="item.images" mode="" 
-				:style="{'transform' : `scale(${Maxtransform})`,'width':`${width}rpx`,'height':`${height}rpx`,'borderRadius':Border ? '50rpx' :'','border':Border ? '1px solid #eee' :''}"></image>
+				<image :src="item.images" :style="{'transform' : `scale(${Maxtransform})`,'width':`${width}rpx`,'height':`${height}rpx`,'borderRadius':Border ? '50rpx' :'' , 'border':Border ? '1px solid #eee' :''}"></image>
 				<view :style="{'fontSize':fontSize,'color':textColor,marginTop:marginTop}">{{item.name}}</view>
 			</view>
 		</view>
