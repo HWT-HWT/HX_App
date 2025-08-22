@@ -6,7 +6,7 @@
 		<view class="index-TitleTab">
 			<image class="TitleTab-bg" src="@/static/index-TitleTab-1.png" mode=""></image>
 			<view class="TitleTab-list">
-				<ListViewVue :list="IndexListViewVue" width="80" height="80" font-size="30rpx" @index='GetIndex'></ListViewVue>
+				<ListViewVue :list="IndexListViewVue" width="80" height="80" font-size="28rpx" @index='GetIndex'></ListViewVue>
 			</view>
 		</view>
 		<view class="index-logoinView" v-if="!account">
@@ -306,6 +306,9 @@
 				}) : ''
 			},
 			getListIindex(index){
+				if(!this.account){
+					return
+				}
 				index === 2 ? uni.navigateTo({
 					url:'/pages/IncomeExpenses/IncomeExpenses'
 				}) : ''
